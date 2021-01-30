@@ -1,0 +1,14 @@
+container{
+    display:grid;
+    Height:100;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr  1.5fr 1.2fr;
+    grid-template-areas: ;
+
+}
+
+header{
+    background-color: pink;
+    color: salmon;
+    display: flex
+}
