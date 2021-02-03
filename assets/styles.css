@@ -4,17 +4,31 @@
 body {
 display: flex;
 min-height: 100vh;
-flex-direction: row;
 margin:0;
 }
-section {
-    background: white;
-    color: gray;
-    padding: 20px;
+
+header {
+    display: flex;
+    padding: 1em;
+    background-color: lightsalmon;
+    color: white;
+    justify-content: space-between;
+    align-items: right;
+    flex-wrap: wrap;
+    
 }
-div {
-    background: lightsalmon;
-    display: block;
+
+.navbar { 
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    
+}
+.nav-li {
+    display: flex;
+    list-style-type: none;
+    color: white;
+    align-items: flex-end;
 
 }
 footer{
