@@ -1,16 +1,11 @@
 *{
     box-sizing: border-box;
 }
-body {
-display: flex;
-min-height: 100vh;
-margin:0;
-}
 
 header {
     display: flex;
     padding: 1em;
-    background-color: lightsalmon;
+    background-color: rgb(211, 199, 204) ;
     color: white;
     justify-content: space-between;
     align-items: right;
@@ -18,18 +13,96 @@ header {
     
 }
 
-.navbar { 
-    display: flex;
+.flex-container {
+    display:flex;
     flex-direction: row;
+    background-color: rgb(211, 199, 204);
+
+}
+ul {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+    display: inline-block;
     
 }
-.nav-li {
-    display: flex;
-    list-style-type: none;
-    color: white;
-    align-items: flex-end;
 
+li {
+    float: right;
+    
+}
+
+li a {
+    display:inline-block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+   
+}
+.hero-image {
+    height: 100px;
+    background-image: url(banner.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.hero-text{
+    bottom: 8px;
+    right: 16px;
+    position: absolute;
+    color: white;
+    
+}
+.row{
+    display:flex;
+}
+.column {
+    display:flex;
+    background-color: white;
+    color: rgb(226, 115, 161);
+    justify-content: right;
+    border-right-color: rgb(226, 115, 161);
+    flex: 40%;
+    ;
+}
+
+.column1{
+    display:flex;
+    background-color: white;
+    color: rgb(226, 115, 161);
+    justify-content: left;
+    flex: 60%
+}
+.column1 >p{
+    text-align: right;
+}
+
+.row2{
+    display:flex;
+    
+
+}
+
+.column2{
+    display: flex;
+    flex:40%;
+}
+
+.column3{
+    position:relative;
+}
+
+.text-box{
+    position:absolute;
+    bottom: 20px;
+    right:20px;
+    background-color: purple;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 footer{
     background: white;
