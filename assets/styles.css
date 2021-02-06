@@ -80,22 +80,36 @@ li a {
     text-align: right;
 }
 
-.row2{
+.box{
     display:flex;
-    
-
-}
-
-.column2{
-    display: flex;
-    flex:40%;
-}
-
-.column3{
     position:relative;
+    flex-flow:row wrap;
+
 }
 
-.text-box{
+.box1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
+
+    flex:40%;
+    color: rgb(226, 115, 161);
+    border-color:rgb(226, 115, 161);
+    border:rgb(226, 115, 161)
+}
+
+.box2{
+    position:relative;
+     background-image: url("Surf Report.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:60%;
+    display:flex;
+    flex-direction: row;
+}
+
+.text-block h4 p >div {
     position:absolute;
     bottom: 20px;
     right:20px;
@@ -103,6 +117,49 @@ li a {
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+}
+.box3{
+    position:relative;
+    background-image: url("UD Wall.jpg");
+   background-position:left;
+   background-repeat: no-repeat;
+   background-size: cover;
+    display:flex;
+    flex:4;
+   flex-direction: row;   
+
+}
+.box4{
+    position:relative;
+    background-image: url("Calculator.jpg");
+   background-position:right;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display:flex;
+   flex:4;
+   flex-direction: column;   
+}
+
+.box5{
+    position:relative;
+    background-image: url("Pastel.jpg");
+   background-position:right;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display:flex;
+   flex:4;
+   flex-direction: row;   
+}
+
+.box6{
+    position:relative;
+    background-image: url("Run Buddy.jpg");
+   background-position:right;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display:flex;
+   flex:4;
+   flex-direction: column;   
 }
 footer{
     background: white;
